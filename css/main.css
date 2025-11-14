@@ -399,7 +399,7 @@ button {
     line-height: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .our__box {
@@ -447,6 +447,7 @@ button {
     margin: 0 auto;
     width: 100%;
 }
+
 .swiper {
     position: relative;
     overflow: hidden;
@@ -652,20 +653,13 @@ button {
     position: relative;
 }
 
-.stages__arrow {
-    border-left: 3px dashed #000000;
-    padding-left: 8px;
-    padding-top: 11px;
-    height: 224px;
-}
 
 
-.stages__arrows {
-    margin-top: 50px;
-}
 
 .stages__card {
     display: flex;
+    position: relative;
+    z-index: 200;
     flex-direction: column;
     align-items: start;
     justify-content: start;
@@ -673,7 +667,8 @@ button {
 
 
 .stages__row {
-    display: grid;
+    position: relative;
+    z-index: 1;
 }
 
 .stages__item {
@@ -681,7 +676,9 @@ button {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1630px;
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
     width: 100%;
 }
 
@@ -690,22 +687,19 @@ button {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 965px;
+    position: relative;
+    z-index: 1;
     width: 100%;
 }
 
-.stages__cols {
-    display: flex;
-    align-items: end;
-    text-align: start;
-    justify-content: end;
-}
+.stages__cols {}
 
 .stages__col {
     display: flex;
     align-items: end;
     text-align: start;
     justify-content: end;
+    gap: 7px;
 }
 
 
@@ -732,12 +726,6 @@ button {
     gap: 172px;
 }
 
-.stages__card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /* clients */
 
@@ -752,6 +740,7 @@ button {
     padding: 0 20px;
     justify-content: center;
     align-items: center;
+    overflow: hidden
     ;
 }
 
@@ -850,7 +839,7 @@ button {
     gap: 30px;
 }
 
-.only__moblie {
+.only__mobile {
     display: none;
 }
 
@@ -1196,6 +1185,18 @@ button {
 .stages__images {
     max-width: 1628px;
     width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.stages__image {
+    position: relative;
+    z-index: 100;
+}
+
+.stages__img {
+    max-width: 200px;
+    width: 100%;
 }
 
 @media (max-width:1200px) {
@@ -1306,6 +1307,22 @@ button {
         flex-direction: column;
     }
 
+    .servicer__img2 {
+        max-width: 250px;
+        left: 541px;
+    }
+
+    .servicer__img1 {
+        max-width: 250px;
+        left: -126px;
+        top: 280px;
+    }
+
+    .servicer__img3 {
+        max-width: 250px;
+        left: 510px;
+        top: 500px;
+    }
 }
 
 
@@ -1395,27 +1412,29 @@ button {
 
     .swiper-button-prevs,
     .swiper-button-nexts {
-        overflow: visible;
+        margin-top: -30px;
     }
 
     .swiper-button-prevs {
-        right: 100px;
         top: 0;
+        left: 250px;
         width: 32px;
         height: 32px;
     }
 
     .swiper-button-nexts {
-        right: 10px;
         top: 0;
         width: 32px;
         height: 32px;
-        right: 250px;
     }
-    
-    .swiper {
-        position: relative;
-        overflow: vi;
+
+    .mySwiper {
+        overflow: visible !important;
+    }
+    .swiper-wrapper {
+    }
+    .swiper .mySwiper {
+        overflow: visible;
     }
 
     .services__info {
@@ -1444,7 +1463,7 @@ button {
 
     .services__title {
         font-size: 32px;
-        margin-bottom: 24px;
+        margin-bottom: 60px;
     }
 
     .services__btn {
@@ -1545,6 +1564,11 @@ button {
         height: 7px;
     }
 
+    .clients {
+        padding-bottom: 42px;
+        padding-top: 35px;
+    }
+
     .selected-country {
         gap: 22px;
     }
@@ -1606,7 +1630,7 @@ button {
 
     .stages__col-title {
         font-size: 18px;
-        margin-bottom: 4px;
+        margin-bottom: 8px;
     }
 
     .stages__col-description {
@@ -1625,28 +1649,31 @@ button {
 
     .stages__cols:nth-child(1) {
         margin-left: auto;
+        margin-bottom: 50px;
     }
 
     .stages__cols:nth-child(2) {
         margin-right: auto;
+        margin-bottom: 50px;
     }
 
     .stages__cols:nth-child(3) {
         margin-left: auto;
-    }
-
-    .stages__arrow {
-        height: 167px;
-        margin: 0 auto;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 1px;
-        transform: rotate(-90deg);
+        margin-bottom: 50px;
     }
 
     .stages__image {
         margin: 0 auto;
+        margin-top: -47px;
+        position: absolute;
+        z-index: -14;
+        left: 40%;
+        top: 7%;
+    }
+
+    .stages__card {
+        max-width: 150px;
+        width: 100%;
     }
 
     .stages__item {
@@ -1656,20 +1683,29 @@ button {
     .stages__items {
         flex-direction: column;
     }
+
     .servicer__img2 {
         max-width: 250px;
         left: 241px;
     }
+
     .servicer__img1 {
         max-width: 250px;
-        left: -126px;
+        left: 0;
         top: 280px;
     }
+
     .servicer__img3 {
         max-width: 250px;
-        left: 230px;
+        right: 0;
         top: 500px;
     }
+
+    .only__mobile {
+        display: block;
+    }
+
+
 }
 
 
@@ -1747,5 +1783,16 @@ button {
 
     .services__box {
         margin-bottom: 20px;
+    }
+
+    .stages__col {
+        flex-direction: column;
+        max-width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .stages__img {
+        max-width: 157px;
+        width: 100%;
     }
 }
