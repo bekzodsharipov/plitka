@@ -26,6 +26,11 @@ ul {
     list-style: none;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
+
 button {
     cursor: pointer;
 }
@@ -740,8 +745,7 @@ button {
     padding: 0 20px;
     justify-content: center;
     align-items: center;
-    overflow: hidden
-    ;
+    overflow: hidden;
 }
 
 .clients__box {
@@ -1431,8 +1435,9 @@ button {
     .mySwiper {
         overflow: visible !important;
     }
-    .swiper-wrapper {
-    }
+
+    .swiper-wrapper {}
+
     .swiper .mySwiper {
         overflow: visible;
     }
