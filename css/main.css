@@ -1656,6 +1656,20 @@ button {
     .stages__items {
         flex-direction: column;
     }
+    .servicer__img2 {
+        max-width: 250px;
+        left: 241px;
+    }
+    .servicer__img1 {
+        max-width: 250px;
+        left: -126px;
+        top: 280px;
+    }
+    .servicer__img3 {
+        max-width: 250px;
+        left: 230px;
+        top: 500px;
+    }
 }
 
 
