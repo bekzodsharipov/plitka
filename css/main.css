@@ -1243,6 +1243,7 @@ button {
     max-width: 260px;
     width: 100%;
 }
+
 @media (max-width:1200px) {
 
     .hero {
@@ -1661,6 +1662,9 @@ button {
     }
 
     .footer__row {
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
         margin-bottom: 16px;
     }
 
@@ -1875,6 +1879,7 @@ button {
     .services__box {
         margin-bottom: 20px;
     }
+
     .servicer__img2 {
         max-width: 250px;
         left: 240px;
@@ -1900,14 +1905,17 @@ button {
 
         left: -40px;
     }
+
     .servicer__img2 {
         left: 200px;
     }
+
     .servicer__img1 {
         max-width: 250px;
         left: -146px;
         top: 280px;
     }
+
     .servicer__img3 {
         left: 180px;
         left: ;
