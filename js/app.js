@@ -24,40 +24,9 @@ window.addEventListener("resize", () => {
     }
 });
 
-var swiper = new Swiper(".mySwiper", {
-    loop: true,
-    slidesPerView: 2, // desktop
-    slidesPerGroup: 2,
-    spaceBetween: 33,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    navigation: {
-        nextEl: ".swiper-button-nexts",
-        prevEl: ".swiper-button-prevs",
-    },
-    breakpoints: {
-        0: {  
-            slidesPerView: 1,
-            slidesPerGroup: 1,
-            spaceBetween: 15
-        },
-        768: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 20
-        },
-        1024: {
-            slidesPerView: 2,
-            slidesPerGroup: 2,
-            spaceBetween: 33
-        }
-    }
-});
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const phoneInput = document.getElementById("tel");
     const countryDropdown = document.getElementById("countryDropdown");
     const selectedCountryCode = document.getElementById("selectedCountryCode");
@@ -67,10 +36,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const countries = [
         { name: "Russia", code: "+7", placeholder: "999 123 45 67", validate: /^\d{3} \d{3} \d{2} \d{2}$/ },
         { name: "Uzbekistan", code: "+998", placeholder: "88 123 45 67", validate: /^\d{2} \d{3} \d{2} \d{2}$/ },
+        { name: "Kazakhstan", code: "+7", placeholder: "777 123 45 67", validate: /^\d{3} \d{3} \d{2} \d{2}$/ },
+        { name: "Kyrgyzstan", code: "+996", placeholder: "555 123 456", validate: /^\d{3} \d{3} \d{3}$/ },
         { name: "Tajikistan", code: "+992", placeholder: "55 555 5555", validate: /^\d{2} \d{3} \d{4}$/ },
+        { name: "Turkmenistan", code: "+993", placeholder: "61 123456", validate: /^\d{2} \d{6}$/ },
+
         { name: "USA", code: "+1", placeholder: "555 123 4567", validate: /^\d{3} \d{3} \d{4}$/ },
-        { name: "South Korea", code: "+82", placeholder: "10 1234 5678", validate: /^\d{2} \d{4} \d{4}$/ }
+        { name: "Canada", code: "+1", placeholder: "555 123 4567", validate: /^\d{3} \d{3} \d{4}$/ },
+        { name: "Mexico", code: "+52", placeholder: "55 1234 5678", validate: /^\d{2} \d{4} \d{4}$/ },
     ];
+
 
     let currentCode = "+7";
 
@@ -107,17 +82,17 @@ document.addEventListener("DOMContentLoaded", function() {
         const c = countries.find(c => c.code === currentCode);
 
         if (c.code === "+998") {
-            if(digits.length > 0) formatted += digits.slice(0, 2);
-            if(digits.length > 2) formatted += " " + digits.slice(2, 5);
-            if(digits.length > 5) formatted += " " + digits.slice(5, 7);
-            if(digits.length > 7) formatted += " " + digits.slice(7, 9);
+            if (digits.length > 0) formatted += digits.slice(0, 2);
+            if (digits.length > 2) formatted += " " + digits.slice(2, 5);
+            if (digits.length > 5) formatted += " " + digits.slice(5, 7);
+            if (digits.length > 7) formatted += " " + digits.slice(7, 9);
         }
 
         if (c.code === "+7") {
-            if(digits.length > 0) formatted += digits.slice(0, 3);
-            if(digits.length > 3) formatted += " " + digits.slice(3, 6);
-            if(digits.length > 6) formatted += " " + digits.slice(6, 8);
-            if(digits.length > 8) formatted += " " + digits.slice(8, 10);
+            if (digits.length > 0) formatted += digits.slice(0, 3);
+            if (digits.length > 3) formatted += " " + digits.slice(3, 6);
+            if (digits.length > 6) formatted += " " + digits.slice(6, 8);
+            if (digits.length > 8) formatted += " " + digits.slice(8, 10);
         }
 
         phoneInput.value = formatted;

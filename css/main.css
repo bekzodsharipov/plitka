@@ -31,6 +31,10 @@ html {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     cursor: pointer;
 }
@@ -92,6 +96,12 @@ button {
 }
 
 
+.header__number-mobile {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 .header__number-title {
     font-family: Montserrat, sans-serif;
     font-weight: 400;
@@ -100,8 +110,16 @@ button {
     color: white;
 }
 
+.header__number-titles {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: black;
+}
+
 .header__images {
-    background-color: white;
+    background-color: #E1E3E6;
     border-radius: 100%;
     width: 25px;
     height: 25px;
@@ -268,6 +286,16 @@ button {
     cursor: pointer;
 }
 
+.hero__cols {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #0A83FF;
+    border-radius: 50px;
+    padding: 23px 44px 22px 36px;
+    cursor: pointer;
+}
+
 .hero__images {
     background-color: white;
     border-radius: 19px;
@@ -395,6 +423,7 @@ button {
     padding: 0 20px;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .our__title {
@@ -411,7 +440,7 @@ button {
     margin-bottom: 18px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 885px;
+    max-width: 920px;
 }
 
 .our__item {
@@ -457,6 +486,7 @@ button {
     position: relative;
     overflow: hidden;
 }
+
 
 .swiper-button-nexts,
 .swiper-button-prevs {
@@ -590,13 +620,16 @@ button {
     display: flex;
     align-items: center;
     gap: 10px;
+    max-width: 454px;
+    width: 100%;
     font-size: 22px;
+    font-family: Montserrat, sans-serif;
     line-height: 100%;
     font-weight: 500;
     color: white;
     border-radius: 50px;
     background-color: #0A83FF;
-    padding: 23px 44px 22px 36px;
+    padding: 23px 0px 22px 36px;
     border: none;
     cursor: pointer;
     margin: 0 auto;
@@ -617,6 +650,7 @@ button {
 
 .servicer__img3 {
     position: absolute;
+    left: ;
     left: -530px;
 }
 
@@ -695,9 +729,9 @@ button {
     position: relative;
     z-index: 1;
     width: 100%;
+    max-width: 1530px;
 }
 
-.stages__cols {}
 
 .stages__col {
     display: flex;
@@ -811,6 +845,7 @@ button {
     line-height: 100%;
     margin-bottom: 5px;
 }
+
 
 .gift__text {
     font-family: Montserrat, sans-serif;
@@ -994,7 +1029,7 @@ button {
 
 .select-wrapper::after {
     content: "";
-    background-image: url(../images/icons/Vector\ \(19\).svg);
+    background-image: url(../images/icons/arrow-bttom.svg);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -1153,6 +1188,7 @@ button {
 .footer__row {
     align-items: center;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
 .footer__col {
@@ -1203,6 +1239,10 @@ button {
     width: 100%;
 }
 
+.max {
+    max-width: 260px;
+    width: 100%;
+}
 @media (max-width:1200px) {
 
     .hero {
@@ -1227,10 +1267,6 @@ button {
     }
 
     .header__nav {
-        display: none;
-    }
-
-    .header__number {
         display: none;
     }
 
@@ -1307,6 +1343,10 @@ button {
         font-size: 40px;
     }
 
+    .gift__title>span {
+        color: #0A83FF;
+    }
+
     .footer__box {
         flex-direction: column;
     }
@@ -1343,18 +1383,27 @@ button {
 
     .hero__title {
         font-size: 32px;
-        text-transform: capitalize;
+        text-transform: none;
         text-align: start;
     }
 
     .hero__description {
         font-size: 12px;
+        margin-bottom: 17px;
+        text-transform: none;
         text-align: start;
     }
 
     .hero__col {
         padding: 10px 14px;
         gap: 5px;
+        box-shadow: 0px 3px 0px 0px #0053A9;
+    }
+
+    .hero__cols {
+        padding: 10px 18px 10px 25px;
+        gap: 5px;
+        box-shadow: 0px 3px 0px 0px #0053A9;
     }
 
     .hero__imagSec {
@@ -1411,7 +1460,7 @@ button {
     }
 
     .our__item img {
-        max-width: 350px;
+        max-width: 360px;
     }
 
     .swiper-button-prevs,
@@ -1419,24 +1468,27 @@ button {
         margin-top: -30px;
     }
 
+    .swiper-button-prevs svg,
+    .swiper-button-nexts svg {
+        width: 13px;
+        height: 9px;
+    }
+
     .swiper-button-prevs {
-        top: 0;
-        left: 250px;
         width: 32px;
         height: 32px;
+        left: 250px;
     }
 
     .swiper-button-nexts {
-        top: 0;
         width: 32px;
         height: 32px;
+        left: 290px;
     }
 
     .mySwiper {
         overflow: visible !important;
     }
-
-    .swiper-wrapper {}
 
     .swiper .mySwiper {
         overflow: visible;
@@ -1468,7 +1520,11 @@ button {
 
     .services__title {
         font-size: 32px;
-        margin-bottom: 60px;
+        margin-bottom: 64px;
+    }
+
+    .ms {
+        margin-bottom: 20px;
     }
 
     .services__btn {
@@ -1480,10 +1536,6 @@ button {
         padding-top: 10px;
         padding-left: 10px;
         margin-bottom: 8px;
-    }
-
-    .swiper-button-nexts {
-        margin-left: 50px;
     }
 
     .clients__box {
@@ -1518,11 +1570,12 @@ button {
     }
 
     .gift__title {
-        font-size: 32px;
+        font-size: 30px;
         margin-bottom: 5px;
     }
 
     .gift__text {
+        margin-bottom: 10px;
         font-size: 14px;
     }
 
@@ -1638,6 +1691,19 @@ button {
         margin-bottom: 8px;
     }
 
+    .ml {
+        padding-top: 10px;
+        margin-left: 10px;
+    }
+
+    .mr {
+        margin-left: -20px;
+    }
+
+    .mt {
+        padding-top: 10px;
+    }
+
     .stages__col-description {
         font-size: 12px;
     }
@@ -1669,11 +1735,11 @@ button {
 
     .stages__image {
         margin: 0 auto;
-        margin-top: -47px;
+        margin-top: -49px;
         position: absolute;
-        z-index: -14;
+        z-index: 30;
         left: 40%;
-        top: 7%;
+        top: 0.5%;
     }
 
     .stages__card {
@@ -1691,36 +1757,53 @@ button {
 
     .servicer__img2 {
         max-width: 250px;
-        left: 241px;
+        left: 550px;
     }
 
     .servicer__img1 {
         max-width: 250px;
-        left: 0;
+        left: -136px;
         top: 280px;
     }
 
     .servicer__img3 {
         max-width: 250px;
-        right: 0;
-        top: 500px;
+        left: 550px;
     }
 
     .only__mobile {
-        display: block;
+        display: flex;
     }
 
+    .swiper__box {
+        max-width: 69px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
 
+    .our {
+        padding-top: 17px;
+        padding-bottom: 25px;
+    }
+
+    .stages__col {
+        flex-direction: column;
+        max-width: 250px;
+        margin-bottom: 50px;
+    }
+
+    .stages__img {
+        max-width: 163px;
+        width: 100%;
+    }
 }
 
 
 @media (max-width:480px) {
-    .hero__col {
-        width: 100%;
-    }
 
     .hero__col-description {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .hero__box {
@@ -1778,7 +1861,10 @@ button {
 
     .services__btn {
         font-size: 16px;
+        max-width: 231px;
         padding: 10px 14px;
+        box-shadow: 0px 3px 0px 0px #0053A9;
+        margin: auto 0;
     }
 
     .services__btn img {
@@ -1789,15 +1875,41 @@ button {
     .services__box {
         margin-bottom: 20px;
     }
-
-    .stages__col {
-        flex-direction: column;
+    .servicer__img2 {
         max-width: 250px;
-        margin-bottom: 50px;
+        left: 240px;
     }
 
-    .stages__img {
-        max-width: 157px;
-        width: 100%;
+    .servicer__img1 {
+        max-width: 250px;
+        left: -136px;
+        top: 280px;
+    }
+
+    .servicer__img3 {
+        max-width: 250px;
+        left: 210px;
+        top: 550px;
+    }
+
+
+}
+
+@media (max-width:340px) {
+    .swiper__box {
+
+        left: -40px;
+    }
+    .servicer__img2 {
+        left: 200px;
+    }
+    .servicer__img1 {
+        max-width: 250px;
+        left: -146px;
+        top: 280px;
+    }
+    .servicer__img3 {
+        left: 180px;
+        left: ;
     }
 }

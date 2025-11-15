@@ -18,16 +18,16 @@
                 <a class="header__logo" href="#">Logo</a>
 
                 <ul class="header__nav">
-                    <li><a class="header__nav-link" href="#">Почему мы?</a></li>
-                    <li><a class="header__nav-link" href="#">Наши работы</a></li>
-                    <li><a class="header__nav-link" href="#">Как мы работаем</a></li>
-                    <li><a class="header__nav-link" href="#">Отзывы</a></li>
-                    <li><a class="header__nav-link" href="#">Оставить заявку</a></li>
+                    <li><a class="header__nav-link" href="#whyUs">Почему мы?</a></li>
+                    <li><a class="header__nav-link" href="#our">Наши работы</a></li>
+                    <li><a class="header__nav-link" href="#stages">Как мы работаем</a></li>
+                    <li><a class="header__nav-link" href="#clients">Отзывы</a></li>
+                    <li><a class="header__nav-link" href="#request">Оставить заявку</a></li>
                 </ul>
 
                 <div class="header__number">
                     <div class="header__images">
-                        <img src="./images/icons/tel.svg" alt="tel">
+                        <img src="./images/icons/Vector (20).svg" alt="tel">
                     </div>
                     <p class="header__number-title">+7 961 875-1032</p>
                 </div>
@@ -41,21 +41,14 @@
 
             <div class="mobile-menu" id="mobileMenu">
                 <div class="close-btn" id="closeBtn">×</div>
-
-                <ul>
-                    <li><a href="#">Почему мы?</a></li>
-                    <li><a href="#">Наши работы</a></li>
-                    <li><a href="#">Как мы работаем</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Оставить заявку</a></li>
+                <ul style="text-decoration: underline;">
+                    <li><a href="#whyUs">Почему мы?</a></li>
+                    <li><a href="#our">Наши работы</a></li>
+                    <li><a href="#stages">Как мы работаем</a></li>
+                    <li><a href="#clients">Отзывы</a></li>
+                    <li><a href="#request">Оставить заявку</a></li>
                 </ul>
 
-                <div class="header__number mobile-number">
-                    <div class="header__images">
-                        <img src="./images/icons/tel.svg" alt="tel">
-                    </div>
-                    <p class="header__number-title">+7 961 875-1032</p>
-                </div>
             </div>
 
         </header>
@@ -64,11 +57,12 @@
 
         <section class="hero">
             <div class="hero__container">
-                <h1 class="hero__title">ремонт ванной комнат <br>
-                    под ключ в Москве и Области</h1>
-                <p class="hero__description">делаем всё за вас: от демонтажа до финальной уборки. Гарантия 5 лет.</p>
+                <h1 class="hero__title">Ремонт ванной комнат
+                    под ключ в Москве
+                    и Области</h1>
+                <p class="hero__description">Делаем всё за вас: от демонтажа до финальной уборки. Гарантия 5 лет.</p>
                 <div class="hero__row">
-                    <div class="hero__col">
+                    <div class="hero__cols">
                         <img class="hero__imagSec" src="/images/icons/arrow-left.svg" loading="lazy"
                             alt="telegram icon">
                         <div class="hero__images">
@@ -99,7 +93,7 @@
 
     </div>
 
-    <section class="whyUs">
+    <section class="whyUs" id="whyUs">
         <div class="whyUs__container">
 
             <h2 class="whyUs__title">Почему именно мы?</h2>
@@ -157,7 +151,7 @@
 
 
 
-    <section class="our">
+    <section class="our" id="our">
         <div class="our__container">
             <h2 class="our__title">Наши работы</h2>
 
@@ -191,26 +185,29 @@
                     </div>
                 </div>
 
-                <div class="swiper-button-nexts">
-                    <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_80_172)">
-                            <path d="M3.16602 2.16021L12.6233 12.1428L3.16602 22.1255" stroke="white" stroke-width="3"
+                <div class="swiper__box">
+                    <div class="swiper-button-nexts">
+                        <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_80_172)">
+                                <path d="M3.16602 2.16021L12.6233 12.1428L3.16602 22.1255" stroke="white"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_80_172">
+                                    <rect width="25" height="15" fill="white"
+                                        transform="translate(1.09279e-06 25) rotate(-90)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prevs">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.957 21.4653L1.49979 11.4826L10.957 1.5" stroke="white" stroke-width="3"
                                 stroke-linecap="round" stroke-linejoin="round" />
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_80_172">
-                                <rect width="25" height="15" fill="white"
-                                    transform="translate(1.09279e-06 25) rotate(-90)" />
-                            </clipPath>
-                        </defs>
-                    </svg>
+                        </svg>
+                    </div>
                 </div>
-                <div class="swiper-button-prevs">
-                    <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.957 21.4653L1.49979 11.4826L10.957 1.5" stroke="white" stroke-width="3"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
+
             </div>
 
 
@@ -223,9 +220,9 @@
 
     <section class="services">
         <div class="services__icons">
-            <img class="servicer__img2" src="./images/services/icon2.avif" alt="">
             <img class="servicer__img3" src="./images/services/icon1.avif" alt="">
-            <!-- <img class="servicer__img1" src="./images/services/icon1.avif" alt=""> -->
+            <img class="servicer__img2" src="./images/services/icon2.avif" alt="">
+            <img class="servicer__img1" src="./images/services/icon1.avif" alt="">
         </div>
 
         <div class="services__container">
@@ -252,19 +249,27 @@
                 </div>
             </div>
 
-            <button class="services__btn">
+            <a class="services__btn only__destop" href="#request">
                 <img src="./images/icons/tel.svg" alt="">
-                Получить расчёт стоимости</button>
+                Получить расчёт стоимости
+            </a>
+            <div class="hero__cols max only__mobile">
+                <img class="hero__imagSec" src="/images/icons/arrow-left.svg" loading="lazy" alt="telegram icon">
+                <div class="hero__images">
+                    <img src="/images/icons/telTwo.svg" width="20" height="20" alt="">
+                </div>
+                <p class="hero__col-description">Получить расчёт стоимости</p>
+            </div>
         </div>
     </section>
 
 
 
-    <section class="stages">
+    <section class="stages" id="stages">
         <div class="stages__container">
             <h2 class="services__title">Этапы работы</h2>
 
-            
+
             <div class="stages__row">
                 <div class="stages__item">
                     <div class="stages__col">
@@ -274,7 +279,7 @@
                             <img src="./images/icons/arrow-dashed1.svg" class="only__destop" alt="">
                         </div>
                         <div class="stages__card">
-                            <h3 class="stages__col-title">02 | Выезд на замер</h3>
+                            <h3 class="stages__col-title">01 | Выезд на замер</h3>
                             <p class="stages__col-description">Приезжаем и делаем замер на объекте</p>
                         </div>
                     </div>
@@ -284,14 +289,14 @@
                             <img src="./images/icons/arrow-dashed1.svg" class="only__destop" alt="">
                         </div>
                         <div class="stages__card">
-                            <h3 class="stages__col-title">02 | Выезд на замер</h3>
-                            <p class="stages__col-description">Приезжаем и делаем замер на объекте</p>
+                            <h3 class="stages__col-title mr">02 | Обсуждаем дизайн</h3>
+                            <p class="stages__col-description mr">Приезжаем и делаем замер на объекте</p>
                         </div>
                     </div>
                 </div>
 
                 <img class="stages__images only__destop" src="./images/Group 16.png" alt="">
-                <img class="stages__image only__mobile" src="./images/Group 16 (1).png" alt="">           
+                <img class="stages__image only__mobile" src="./images/Group 16 (1).png" alt="">
 
                 <div class="stages__items">
 
@@ -301,9 +306,10 @@
                             <img src="./images/icons/arrow-dashed1.svg" class="only__destop" alt="">
                         </div>
 
-                        <div class="stages__card">
-                            <h3 class="stages__col-title">02 | Выезд на замер</h3>
-                            <p class="stages__col-description">Приезжаем и делаем замер на объекте</p>
+                        <div class="stages__card ml">
+                            <h3 class="stages__col-title">03 | Список материалов </h3>
+                            <p class="stages__col-description">Подсказываем, что
+                                и сколько нужно</p>
                         </div>
                     </div>
 
@@ -313,9 +319,10 @@
                             <img src="./images/icons/arrow-dashed1.svg" class="only__destop" alt="">
                         </div>
 
-                        <div class="stages__card">
-                            <h3 class="stages__col-title">02 | Выезд на замер</h3>
-                            <p class="stages__col-description">Приезжаем и делаем замер на объекте</p>
+                        <div class="stages__card mt">
+                            <h3 class="stages__col-title">04 | Начинаем работу</h3>
+                            <p class="stages__col-description">Делаем быстро
+                                и аккуратно</p>
                         </div>
                     </div>
 
@@ -326,9 +333,9 @@
                             <img src="./images/icons/arrow-dashed1.svg" class="only__destop" alt="">
                         </div>
 
-                        <div class="stages__card">
-                            <h3 class="stages__col-title">02 | Выезд на замер</h3>
-                            <p class="stages__col-description">Приезжаем и делаем замер на объекте</p>
+                        <div class="stages__card ml">
+                            <h3 class="stages__col-title">05 | Приём и гарантия</h3>
+                            <p class="stages__col-description">Предоставляем гарантию на качество</p>
                         </div>
                     </div>
                 </div>
@@ -341,7 +348,7 @@
     </section>
 
 
-    <section class="clients">
+    <section class="clients" id="clients">
         <div class="clients__container">
             <h2 class="services__title">Отзывы наших клиентов</h2>
 
@@ -373,7 +380,7 @@
                 </div>
 
 
-                <div class="">
+                <div class="swiper__box">
                     <div class="swiper-button-nexts">
                         <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_80_172)">
@@ -405,13 +412,13 @@
 
     <section class="gift">
         <div class="gift__container">
-            <h2 class="services__title">Подарок 🎁</h2>
+            <h2 class="services__title ms">Подарок 🎁</h2>
 
             <div class="gift__info">
                 <img class="gift__images" src="./images/gift.avif" alt="gift img">
                 <div class="gift__box">
                     <h3 class="gift__title">В этом месяце при заказе
-                        монтаж натяжные потолки в подарок!</h3>
+                        монтаж <span>натяжные потолки в подарок!</span></h3>
                     <p class="gift__text">При заказе ремонт под ключ в ванной и  санузле - услуга монтаж натяжные
                         потолки
                         входит бесплатно</p>
@@ -429,7 +436,7 @@
     </section>
 
 
-    <section class="request">
+    <section class="request" id="request">
         <div class="request__container">
             <h2 class="request__title">Оставить заявку</h2>
             <p class="request__text">Оставьте свои контакты — мы свяжемся с вами в ближайшее время</p>
@@ -571,6 +578,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script defer src="./js/app.js"></script>
+    <script defer src="./js/swiper.js"></script>
 
 </body>
 
