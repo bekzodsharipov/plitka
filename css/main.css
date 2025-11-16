@@ -401,7 +401,7 @@ button {
     font-family: Nekst, sans-serif;
     font-weight: 400;
     font-size: 18px;
-    line-height: 100%;
+    line-height: 110%;
 }
 
 .whyUs__col-description::first-letter {
@@ -505,11 +505,11 @@ button {
 }
 
 .swiper-button-prevs {
-    left: 10px;
+    left: -30px;
 }
 
 .swiper-button-nexts {
-    right: 10px;
+    right: -30px;
 }
 
 .swiper-button-prevs svg,
@@ -1382,6 +1382,7 @@ button {
         left: 510px;
         top: 500px;
     }
+  
 }
 
 
@@ -1816,7 +1817,7 @@ button {
     .swiper__box {
         max-width: 69px;
         position: absolute;
-        top: 0;
+        top: 100px;
         width: 100%;
     }
 
@@ -1940,10 +1941,6 @@ button {
 }
 
 @media (max-width:340px) {
-    .swiper__box {
-
-        left: -40px;
-    }
 
     .servicer__img2 {
         left: 200px;
@@ -1955,6 +1952,17 @@ button {
         top: 280px;
     }
 
+    .swiper-button-prevs {
+        width: 32px;
+        height: 32px;
+        left: 200px;
+    }
+
+    .swiper-button-nexts {
+        width: 32px;
+        height: 32px;
+        left: 240px;
+    }
     .servicer__img3 {
         left: 180px;
     }
