@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plitka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+
+                <a class="header__logo" href="#">Logo</a>
+
+                <ul class="header__nav">
+                    <li><a class="header__nav-link" href="#whyUs">Почему мы?</a></li>
+                    <li><a class="header__nav-link" href="#our">Наши работы</a></li>
+                    <li><a class="header__nav-link" href="#stages">Как мы работаем</a></li>
+                    <li><a class="header__nav-link" href="#clients">Отзывы</a></li>
+                    <li><a class="header__nav-link" href="#request">Оставить заявку</a></li>
+                </ul>
+
+                <div class="header__number">
+                    <div class="header__images">
+                        <img src="./images/icons/Vector (20).svg" alt="tel">
+                    </div>
+                    <p class="header__number-title">+7 961 875-1032</p>
+                </div>
+
+                <div class="hamburger" id="hamburger">
+                    <img src="./images/icons/menu.svg" alt="">
+                </div>
+            </div>
+
+            <div class="mobile-overlay" id="overlay"></div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="close-btn" id="closeBtn">×</div>
+                <ul style="text-decoration: underline;">
+                    <li><a href="#whyUs">Почему мы?</a></li>
+                    <li><a href="#our">Наши работы</a></li>
+                    <li><a href="#stages">Как мы работаем</a></li>
+                    <li><a href="#clients">Отзывы</a></li>
+                    <li><a href="#request">Оставить заявку</a></li>
+                </ul>
+
+            </div>
+
+        </header>
+
+
+
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Ремонт ванной комнат <br>
+                    под ключ в Москве
+                    и Области</h1>
+                <p class="hero__description">Делаем всё за вас: от демонтажа до финальной уборки. Гарантия 5 лет.</p>
+                <div class="hero__row">
+                    <div class="hero__cols">
+                        <img class="hero__imagSec" src="/images/icons/arrow-left.svg" loading="lazy"
+                            alt="telegram icon">
+                        <div class="hero__images">
+                            <img src="/images/icons/telTwo.svg" width="20" height="20" alt="">
+                        </div>
+                        <p class="hero__col-description">Получить расчёт стоимости</p>
+                    </div>
+                    <div class="hero__box">
+                        <div class="hero__col">
+                            <img class="hero__imagSec" src="/images/icons/telegram.svg" loading="lazy"
+                                alt="telegram icon">
+                            <div class="hero__images">
+                                <img src="/images/icons/telTwo.svg" width="20" height="20" alt="">
+                            </div>
+                            <p class="hero__col-description">Telegram</p>
+                        </div>
+                        <div class="hero__col">
+                            <div class="hero__imagess">
+                                <img src="/images/icons/whatsApp.svg" alt="">
+                            </div>
+                            <p class="hero__col-description">WhatsApp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <section class="whyUs" id="whyUs">
+        <div class="whyUs__container">
+
+            <h2 class="whyUs__title">Почему именно мы?</h2>
+
+            <div class="whyUs__box">
+                <img class="whyUs__img" src="./images/whyUs/img.avif" loading="lazy" alt="img">
+
+                <div class="whyUs__row">
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/1.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">7 лет опыта</h3>
+                        <p class="whyUs__col-description">Наши мастера все  профессионалы с большим опытом</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/2.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Фиксированная ценa</h3>
+                        <p class="whyUs__col-description">без скрытых платежей. Всё в договоре</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/3.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Срок от 10 дней</h3>
+                        <p class="whyUs__col-description">сдаём объект точно в срок</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/4.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Штраф за задержку</h3>
+                        <p class="whyUs__col-description">0,5% в день</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/5.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Гарантия 5 лет</h3>
+                        <p class="whyUs__col-description">на работы и материалы</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/6.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Поэтапная оплата</h3>
+                        <p class="whyUs__col-description">платите после приёмки этапов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="our" id="our">
+        <div class="our__container">
+            <h2 class="our__title">Наши работы</h2>
+
+            <div class="swiper mySwiper">
+                <div class="our__box swiper-wrapper">
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Процесс работы:</h3>
+                        <img src="./images/ourWork/5.avif" alt="images">
+                    </div>
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Результат работы:</h3>
+                        <img src="./images/ourWork/1.avif" alt="images">
+                    </div>
+
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Процесс работы:</h3>
+                        <img src="./images/ourWork/3.avif" alt="images">
+                    </div>
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Результат работы:</h3>
+                        <img src="./images/ourWork/4.avif" alt="images">
+                    </div>
+
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Процесс работы:</h3>
+                        <img src="./images/ourWork/5.avif" alt="images">
+                    </div>
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Результат работы:</h3>
+                        <img src="./images/ourWork/2.avif" alt="images">
+                    </div>
+
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Процесс работы:</h3>
+                        <img src="./images/ourWork/5.avif" alt="images">
+                    </div>
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Результат работы:</h3>
+                        <img src="./images/ourWork/1.avif" alt="images">
+                    </div>
+
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Процесс работы:</h3>
+                        <img src="./images/ourWork/3.avif" alt="images">
+                    </div>
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Результат работы:</h3>
+                        <img src="./images/ourWork/4.avif" alt="images">
+                    </div>
+
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Процесс работы:</h3>
+                        <img src="./images/ourWork/5.avif" alt="images">
+                    </div>
+                    <div class="our__item swiper-slide">
+                        <h3 class="our__item-title">Результат работы:</h3>
+                        <img src="./images/ourWork/2.avif" alt="images">
+                    </div>
+                </div>
+
+                <div class="swiper__box">
+                    <div class="swiper-button-nexts">
+                        <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_80_172)">
+                                <path d="M3.16602 2.16021L12.6233 12.1428L3.16602 22.1255" stroke="white"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_80_172">
+                                    <rect width="25" height="15" fill="white"
+                                        transform="translate(1.09279e-06 25) rotate(-90)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prevs">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.957 21.4653L1.49979 11.4826L10.957 1.5" stroke="white" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <p class="our__description">Г. Сергиев Посад, <br>
+                ул. Краснии Армии 203В «Сбербанк»</p>
+        </div>
+    </section>
+
+
+
+    <section class="services">
+        <div class="services__icons">
+            <img class="servicer__img3" src="./images/services/icon1.avif" alt="">
+            <img class="servicer__img2" src="./images/services/icon2.avif" alt="">
+            <img class="servicer__img1" src="./images/services/icon1.avif" alt="">
+        </div>
+
+        <div class="services__container">
+            <h2 class="services__title">Наши услуги</h2>
+
+            <div class="services__box">
+                <div class="services__info">
+                    <h3 class="services__info-title">01</h3>
+                    <h4 class="services__info-subtitle">Укладка плитки</h4>
+                    <p class="services__info-text">Цена за м²</p>
+                    <h4 class="services__number">90 000 ₽</h4>
+                </div>
+                <div class="services__info">
+                    <h3 class="services__info-title">02</h3>
+                    <h4 class="services__info-subtitle">Укладка плитки</h4>
+                    <p class="services__info-text">Цена за м²</p>
+                    <h4 class="services__number">90 000 ₽</h4>
+                </div>
+                <div class="services__info">
+                    <h3 class="services__info-title">03</h3>
+                    <h4 class="services__info-subtitle">Укладка плитки</h4>
+                    <p class="services__info-text">Цена за м²</p>
+                    <h4 class="services__number">90 000 ₽</h4>
+                </div>
+            </div>
+
+            <a class="services__btn only__destop" href="#request">
+                <img src="./images/icons/tel.svg" alt="">
+                Получить расчёт стоимости
+            </a>
+            <div class="hero__cols max only__mobile">
+                <img class="hero__imagSec" src="/images/icons/arrow-left.svg" loading="lazy" alt="telegram icon">
+                <div class="hero__images">
+                    <img src="/images/icons/telTwo.svg" width="20" height="20" alt="">
+                </div>
+                <p class="hero__col-description">Получить расчёт стоимости</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="stages" id="stages">
+        <div class="stages__container">
+            <h2 class="services__title">Этапы работы</h2>
+
+
+            <div class="stages__row">
+                <div class="stages__item">
+                    <div class="stages__col">
+                        <div class="stages__arrow only__destop"></div>
+                        <div class="">
+                            <img src="./images/icons/arrow-dashed.svg" class="only__mobile stages__img" loading="lazy"
+                                alt="arrow-dashed">
+                            <img src="./images/icons/arrow-dashed1.svg" class="only__destop" loading="lazy"
+                                alt="arrow-dashed">
+                        </div>
+                        <div class="stages__card end">
+                            <h3 class="stages__col-title end">01 | Выезд на замер</h3>
+                            <p class="stages__col-description">Приезжаем и делаем замер на объекте</p>
+                        </div>
+                    </div>
+                    <div class="stages__col">
+                        <div class="">
+                            <img src="./images/icons/arrow-dashed.svg" class="only__mobile stages__img" loading="lazy"
+                                alt="arrow-dashed">
+                            <img src="./images/icons/arrow-dashed1.svg" class="only__destop" loading="lazy"
+                                alt="arrow-dashed">
+                        </div>
+                        <div class="stages__card">
+                            <h3 class="stages__col-title mr">02 | Обсуждаем дизайн</h3>
+                            <p class="stages__col-description mr">Приезжаем и делаем замер на объекте</p>
+                        </div>
+                    </div>
+                </div>
+
+                <img class="stages__images only__destop" src="./images/Group 16.png" loading="lazy" alt="arrow-dashed">
+                <img class="stages__image only__mobile" src="./images/Group 16 (1).png" loading="lazy"
+                    alt="arrow-dashed">
+
+                <div class="stages__items">
+
+                    <div class="stages__cols">
+                        <div class="">
+                            <img src="./images/icons/arrow-dashed.svg" class="only__mobile stages__img" loading="lazy"
+                                alt="arrow-dashed">
+                            <img src="./images/icons/arrow-dashed1.svg" class="only__destop" loading="lazy"
+                                alt="arrow-dashed">
+                        </div>
+
+                        <div class="stages__card end ml">
+                            <h3 class="stages__col-title end">03 | Список материалов </h3>
+                            <p class="stages__col-description">Подсказываем, что
+                                и сколько нужно</p>
+                        </div>
+                    </div>
+
+                    <div class="stages__cols">
+                        <div class="stages__cols-images">
+                            <img src="./images/icons/arrow-dashed.svg" class="only__mobile stages__img" loading="lazy"
+                                alt="arrow-dashed">
+                            <img src="./images/icons/arrow-dashed1.svg" class="only__destop" loading="lazy"
+                                alt="arrow-dashed">
+                        </div>
+
+                        <div class="stages__card mt">
+                            <h3 class="stages__col-title">04 | Начинаем работу</h3>
+                            <p class="stages__col-description">Делаем быстро
+                                и аккуратно</p>
+                        </div>
+                    </div>
+
+
+                    <div class="stages__cols">
+                        <div class="">
+                            <img src="./images/icons/arrow-dashed.svg" class="only__mobile stages__img" loading="lazy"
+                                alt="arrow-dashed">
+                            <img src="./images/icons/arrow-dashed1.svg" class="only__destop" loading="lazy"
+                                alt="arrow-dashed">
+                        </div>
+
+                        <div class="stages__card end ml">
+                            <h3 class="stages__col-title end">05 | Приём и гарантия</h3>
+                            <p class="stages__col-description">Предоставляем гарантию на качество</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stages__btns">
+                    <button class="services__btn btn">
+                        <img src="./images/icons/tel.svg" alt="">
+                        Вызвать мастера</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="clients" id="clients">
+        <div class="clients__container">
+            <h2 class="services__title">Отзывы наших клиентов</h2>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="clients__box swiper-slide">
+                        <img class="clients__images" src="./images/cliens/stars.svg" alt="">
+                        <p class="clients__text">Сделал всё отлично. Быстро, качественно, приятно в сотрудничестве.
+                            Рекомендую!
+                        </p>
+                        <hr>
+                        <div class="clients__card">
+                            <img src="./images/cliens/clien-one.png" width="76" height="76" alt="">
+                            <h3 class="clients__title">Абдулвахоб Абдуллаев</h3>
+                        </div>
+                    </div>
+                    <div class="clients__box swiper-slide">
+                        <img class="clients__images" src="./images/cliens/stars.svg" alt="">
+                        <p class="clients__text">Сделал всё отлично. Быстро, качественно, приятно в сотрудничестве.
+                            Рекомендую!
+                        </p>
+                        <hr>
+                        <div class="clients__card">
+                            <img src="./images/cliens/clien-two.png" width="76" height="76" alt="">
+                            <h3 class="clients__title">Абдулвахоб Абдуллаев</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="swiper__box">
+                    <div class="swiper-button-nexts">
+                        <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_80_172)">
+                                <path d="M3.16602 2.16021L12.6233 12.1428L3.16602 22.1255" stroke="white"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_80_172">
+                                    <rect width="25" height="15" fill="white"
+                                        transform="translate(1.09279e-06 25) rotate(-90)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+
+                    <div class="swiper-button-prevs">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.957 21.4653L1.49979 11.4826L10.957 1.5" stroke="white" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="gift">
+        <div class="gift__container">
+            <h2 class="services__title ms">Подарок 🎁</h2>
+
+            <div class="gift__info">
+                <img class="gift__images" src="./images/gift.avif" alt="gift img">
+                <div class="gift__box">
+                    <h3 class="gift__title">В этом месяце при заказе
+                        монтаж <span>натяжные потолки в подарок!</span></h3>
+                    <p class="gift__text">При заказе ремонт под ключ в ванной и  санузле - услуга монтаж натяжные
+                        потолки
+                        входит бесплатно</p>
+                    <div class="gift__btn-box">
+                        <button class="services__btn btn">
+                            <img src="./images/icons/tel.svg" alt="tel">
+                            Вызвать мастера</button>
+                        <button class="services__btn only__destop">
+                            <img src="./images/icons/telegram.svg" alt="tel">
+                           Написать в телеграм</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="request" id="request">
+        <div class="request__container">
+            <h2 class="request__title">Оставить заявку</h2>
+            <p class="request__text">Оставьте свои контакты — мы свяжемся с вами в ближайшее время</p>
+
+            <form class="request__form">
+                <label class="request__label" for="name">Ваше имя:</label>
+                <input class="request__inp" required id="name" type="text" placeholder="Muxlisa">
+
+                <label class="request__label" for="tel">Номер телефона:</label>
+                <div class="phone-input-container">
+                    <div class="country-selector">
+                        <div class="selected-country" id="selectedCountry">
+                            <span id="selectedCountryCode">+998</span>
+                            <svg id="dropdownIcon" width="23" height="13" viewBox="0 0 23 13" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.4653 1.5L11.4826 10.9572L1.5 1.5" stroke="white" stroke-width="3"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="country-dropdown" id="countryDropdown" style="display: none;"></div>
+                    </div>
+                    <input class="request__inps" type="tel" id="tel" placeholder="88 888 88 88" autocomplete="tel">
+                </div>
+                <p class="homeFormErrorText" id="phoneError" style="display: none">
+                    ❌ Telefon raqam mos emas!
+                </p>
+
+                <label class="request__label" for="adres">Адрес:</label>
+                <input class="request__inp" required id="adres" type="text" placeholder="Город Москва, Братеево район">
+
+                <label class="request__label" for="services">Выберите услугу:</label>
+                <div class="select-wrapper">
+                    <select class="request__inp" id="services">
+                        <option disabled selected>
+                            Выберите услугу:
+                        </option>
+                        <option>
+                            Выберите услугу:
+                        </option>
+                        <option>
+                            Выберите услугу:
+                        </option>
+                    </select>
+                </div>
+
+                <button class="request__btn">
+                    <img width="39" height="39" src="./images/icons/arrow-left.svg" alt="">
+                    Отправить
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__box">
+                <a class="header__logo" href="#">Logo</a>
+                <p class="footer__text only__mobile">Сделаем качественно, ровно и по дизайну 100% гарантия Сроки — точно
+                    в договоре
+                </p>
+                <div class="footer__images-box">
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/telegram.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/instagram.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/youtube.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__row only__moblie">
+                <div class="footer__col">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.7259 5.27161C11.7258 5.43919 12.6341 5.91146 13.3592 6.6351C14.0843 7.35873 14.5538 8.26518 14.7255 9.26304M10.8786 2C12.657 2.30088 14.279 3.14259 15.5689 4.42609C16.8589 5.7134 17.6985 7.33206 18 9.10688M16.6108 16.1681C16.6108 16.1681 15.6452 17.1164 15.4086 17.3944C15.0232 17.8058 14.569 18 13.9737 18C13.9164 18 13.8553 18 13.7981 17.9962C12.6646 17.9238 11.6113 17.482 10.8213 17.105C8.6612 16.0614 6.76445 14.5799 5.18827 12.7022C3.88687 11.1369 3.01673 9.6896 2.44045 8.13568C2.08552 7.18733 1.95576 6.44846 2.01301 5.75148C2.05117 5.30588 2.22291 4.93644 2.53967 4.62033L3.84107 3.32159C4.02808 3.14639 4.22653 3.05118 4.42117 3.05118C4.6616 3.05118 4.85624 3.1959 4.97836 3.31778C4.98218 3.32159 4.986 3.3254 4.98981 3.32921C5.22261 3.5463 5.44397 3.771 5.67677 4.01095C5.79508 4.13282 5.9172 4.2547 6.03933 4.38038L7.08121 5.42014C7.48575 5.82385 7.48575 6.19709 7.08121 6.60081C6.97053 6.71126 6.86367 6.82171 6.753 6.92835C6.43242 7.25589 6.68425 7.00457 6.35222 7.30164C6.34459 7.30926 6.33696 7.31307 6.33314 7.32068C6.00493 7.64823 6.06599 7.96815 6.13469 8.18524C6.1385 8.19667 6.14232 8.20809 6.14614 8.21952C6.4171 8.8746 6.79874 9.49159 7.37884 10.2267L7.38265 10.2305C8.43598 11.5254 9.54656 12.5347 10.7716 13.3078C10.9281 13.4069 11.0884 13.4868 11.241 13.563C11.3784 13.6316 11.5082 13.6963 11.6189 13.7649C11.6341 13.7725 11.6494 13.7839 11.6647 13.7915C11.7944 13.8563 11.9166 13.8867 12.0425 13.8867C12.3593 13.8867 12.5577 13.6887 12.6226 13.6239L13.3707 12.8774C13.5004 12.7479 13.7065 12.5918 13.9469 12.5918C14.1836 12.5918 14.3782 12.7403 14.4965 12.8698C14.5003 12.8736 14.5003 12.8736 14.5041 12.8774L16.607 14.976C17.0001 15.3644 16.6108 16.1681 16.6108 16.1681Z"
+                            stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="footer__col-text">+7 961-875-1032</p>
+                </div>
+                <div class="footer__col">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="10" cy="9.1665" rx="2.5" ry="2.5" stroke="white" stroke-width="1.25"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.7143 13.8806L11.1785 17.4164C10.5278 18.0665 9.4734 18.0665 8.82266 17.4164L5.286 13.8806C2.6826 11.2771 2.68267 7.05602 5.28616 4.45258C7.88964 1.84914 12.1107 1.84914 14.7142 4.45258C17.3177 7.05602 17.3177 11.2771 14.7143 13.8806V13.8806Z"
+                            stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="footer__col-text">г. Ташкент, Чиланзарский район</p>
+                </div>
+
+            </div>
+
+            <ul class="footer__nav">
+                <li><a class="header__nav-link" href="#">Почему мы?</a></li>
+                <li><a class="header__nav-link" href="#">Наши работы</a></li>
+                <li><a class="header__nav-link" href="#">Как мы работаем</a></li>
+                <li><a class="header__nav-link" href="#">Отзывы</a></li>
+                <li><a class="header__nav-link" href="#">Оставить заявку</a></li>
+            </ul>
+
+            <div class="footer__info">
+                <p class="footer__text only__destop">Сделаем качественно, ровно и по дизайну 100% гарантия Сроки — точно
+                    в договоре
+                </p>
+
+                <div class="footer__row only__destop">
+                    <div class="footer__col">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="10" cy="9.1665" rx="2.5" ry="2.5" stroke="white" stroke-width="1.25"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.7143 13.8806L11.1785 17.4164C10.5278 18.0665 9.4734 18.0665 8.82266 17.4164L5.286 13.8806C2.6826 11.2771 2.68267 7.05602 5.28616 4.45258C7.88964 1.84914 12.1107 1.84914 14.7142 4.45258C17.3177 7.05602 17.3177 11.2771 14.7143 13.8806V13.8806Z"
+                                stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="footer__col-text">г. Ташкент, Чиланзарский район, квартал «Ц», дом 7/1</p>
+                    </div>
+                    <div class="footer__col">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.7259 5.27161C11.7258 5.43919 12.6341 5.91146 13.3592 6.6351C14.0843 7.35873 14.5538 8.26518 14.7255 9.26304M10.8786 2C12.657 2.30088 14.279 3.14259 15.5689 4.42609C16.8589 5.7134 17.6985 7.33206 18 9.10688M16.6108 16.1681C16.6108 16.1681 15.6452 17.1164 15.4086 17.3944C15.0232 17.8058 14.569 18 13.9737 18C13.9164 18 13.8553 18 13.7981 17.9962C12.6646 17.9238 11.6113 17.482 10.8213 17.105C8.6612 16.0614 6.76445 14.5799 5.18827 12.7022C3.88687 11.1369 3.01673 9.6896 2.44045 8.13568C2.08552 7.18733 1.95576 6.44846 2.01301 5.75148C2.05117 5.30588 2.22291 4.93644 2.53967 4.62033L3.84107 3.32159C4.02808 3.14639 4.22653 3.05118 4.42117 3.05118C4.6616 3.05118 4.85624 3.1959 4.97836 3.31778C4.98218 3.32159 4.986 3.3254 4.98981 3.32921C5.22261 3.5463 5.44397 3.771 5.67677 4.01095C5.79508 4.13282 5.9172 4.2547 6.03933 4.38038L7.08121 5.42014C7.48575 5.82385 7.48575 6.19709 7.08121 6.60081C6.97053 6.71126 6.86367 6.82171 6.753 6.92835C6.43242 7.25589 6.68425 7.00457 6.35222 7.30164C6.34459 7.30926 6.33696 7.31307 6.33314 7.32068C6.00493 7.64823 6.06599 7.96815 6.13469 8.18524C6.1385 8.19667 6.14232 8.20809 6.14614 8.21952C6.4171 8.8746 6.79874 9.49159 7.37884 10.2267L7.38265 10.2305C8.43598 11.5254 9.54656 12.5347 10.7716 13.3078C10.9281 13.4069 11.0884 13.4868 11.241 13.563C11.3784 13.6316 11.5082 13.6963 11.6189 13.7649C11.6341 13.7725 11.6494 13.7839 11.6647 13.7915C11.7944 13.8563 11.9166 13.8867 12.0425 13.8867C12.3593 13.8867 12.5577 13.6887 12.6226 13.6239L13.3707 12.8774C13.5004 12.7479 13.7065 12.5918 13.9469 12.5918C14.1836 12.5918 14.3782 12.7403 14.4965 12.8698C14.5003 12.8736 14.5003 12.8736 14.5041 12.8774L16.607 14.976C17.0001 15.3644 16.6108 16.1681 16.6108 16.1681Z"
+                                stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="footer__col-text">+998 90-338-70-00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__hr"></div>
+
+            <p class="footer__description">© 2025. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/swiper.js"></script>
+
+</body>
+
+</html>
