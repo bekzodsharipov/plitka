@@ -13,7 +13,7 @@
 
 @font-face {
     font-family: "Nekst";
-    src: url("../font/Fontspring-DEMO-nekst-bold.otf") format("otf");
+    src: url("../font/Fontspring-DEMO-nekst-bold.otf") format("opentype");
     font-weight: 700;
     font-style: bold;
 }
@@ -43,6 +43,7 @@ button {
     background-image: url(/images/bg.avif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .header {
@@ -160,12 +161,17 @@ button {
     width: 70%;
     height: 100vh;
     background: #fff;
-    padding: 40px 20px;
+    padding: 13px 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     transition: 0.4s ease;
     z-index: 1500;
+}
+
+.mobile-menu-box {
+    display: flex;
+    align-items: center;
 }
 
 .mobile-menu.active {
@@ -181,7 +187,6 @@ button {
     font-weight: bold;
     cursor: pointer;
     align-self: flex-end;
-    margin-bottom: 20px;
 }
 
 .mobile-menu ul {
@@ -283,6 +288,7 @@ button {
     background-color: #0A83FF;
     border-radius: 50px;
     padding: 23px 44px 22px 36px;
+    border: none;
     cursor: pointer;
 }
 
@@ -292,7 +298,13 @@ button {
     gap: 10px;
     background-color: #0A83FF;
     border-radius: 50px;
-    padding: 23px 44px 22px 36px;
+    padding: 18px 21px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    width: 100%;
     cursor: pointer;
 }
 
@@ -365,11 +377,9 @@ button {
 }
 
 .whyUs__row {
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 46px;
-    margin-bottom: 50px;
     max-width: 744px;
 }
 
@@ -443,6 +453,14 @@ button {
     max-width: 1101px;
 }
 
+.our__boxs {
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1101px;
+}
+
+
 .our__item {
     border-radius: 10px;
     background-color: #FCFDFF;
@@ -486,6 +504,15 @@ button {
     max-width: 1105px;
 }
 
+
+.swiper__box {
+    margin-bottom: -40px;
+    margin-top: 75px;
+}
+
+.swiper__boxs {
+    top: 10px;
+}
 
 .swiper-button-nexts,
 .swiper-button-prevs {
@@ -542,6 +569,69 @@ button {
     cursor: pointer;
 }
 
+
+
+
+
+
+.mySwiper2 {
+    position: relative;
+}
+
+.swiper-button-next2,
+.swiper-button-prev2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0A83FF;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.swiper-button-prev2 {
+    left: -30px;
+}
+
+.swiper-button-next2 {
+    right: -30px;
+}
+
+.swiper-button-prev2 svg,
+.swiper-button-next2 svg {
+    stroke: white;
+    width: 20px;
+    height: 20px;
+}
+
+
+.swiper-button-next2 {
+    background-color: #0A83FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.swiper-button-prev2 {
+    background-color: #0A83FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
 
 
 /* Services style */
@@ -689,86 +779,36 @@ button {
     position: relative;
 }
 
-
-
-
-.stages__card {
-    display: flex;
-    position: relative;
-    z-index: 200;
-    flex-direction: column;
-    align-items: start;
-    justify-content: start;
-}
-
-
-.stages__row {
-    position: relative;
-    z-index: 1;
-}
-
-.stages__btns {
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.stages__item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
-    max-width: 900px;
+.stages__box-img {
+    max-width: 1630px;
     width: 100%;
+    display: block;
 }
 
-.stages__items {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    position: relative;
-    z-index: 1;
+.stages__box-imgMini {
+    max-width: 375px;
     width: 100%;
-    max-width: 1530px;
+    display: none;
+    margin: 0 auto;
 }
 
-
-.stages__col {
-    display: flex;
-    align-items: end;
-    text-align: start;
-    justify-content: end;
-    gap: 7px;
-}
-
-
-.stages__col-title {
-    font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 100%;
-    margin-bottom: 4px;
-}
-
-.stages__col-description {
-    font-family: Montserrat, sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 100%;
-    max-width: 262px;
-}
-
-.stages__cards {
+.stages__btn {
+    background-color: #0A83FF;
+    box-shadow: 0px 3px 0px 0px #0053A9;
+    border-radius: 50px;
+    border: none;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 172px;
-}
+    gap: 6px;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    padding: 16px 27px;
+    font-size: 18px;
+    display: none;
 
+    line-height: 100%;
+}
 
 /* clients */
 
@@ -783,7 +823,7 @@ button {
     padding: 0 20px;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    position: relative;
 }
 
 .clients__box {
@@ -867,6 +907,11 @@ button {
     gap: 7px;
 }
 
+.gift__col-description {
+    font-size: 22px;
+    color: white;
+}
+
 .gift__images {
     max-width: 797px;
     width: 100%;
@@ -883,12 +928,32 @@ button {
     gap: 30px;
 }
 
+.gift__btn {
+    background-color: #0A83FF;
+    box-shadow: 0px 3px 0px 0px #0053A9;
+    border-radius: 50px;
+    padding: 18px;
+    max-width: 336px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+    color: white;
+}
+
 .only__moblie {
     display: none;
 }
 
 .only__mobile {
     display: none;
+    border: none;
 }
 
 .btn {
@@ -1235,22 +1300,6 @@ button {
     color: #E1E3E6;
 }
 
-.stages__images {
-    max-width: 1628px;
-    width: 100%;
-    position: relative;
-    z-index: 1;
-}
-
-.stages__image {
-    position: relative;
-    z-index: 100;
-}
-
-.stages__img {
-    max-width: 200px;
-    width: 100%;
-}
 
 .max {
     max-width: 260px;
@@ -1325,7 +1374,9 @@ button {
     }
 
     .services__box {
-        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 515px;
+        margin: 0 auto;
     }
 
     .services__info:nth-child(1) {
@@ -1382,7 +1433,28 @@ button {
         left: 510px;
         top: 500px;
     }
-  
+
+    .stages__box-img {
+        display: none;
+    }
+
+    .stages__box-imgMini {
+        display: block;
+    }
+
+    .stages__btn {
+        display: flex;
+        margin-bottom: 67px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .services__icons {
+        display: none;
+    }
+    .gift__images {
+        max-width: 700px;
+    }
 }
 
 
@@ -1417,9 +1489,13 @@ button {
     }
 
     .hero__cols {
-        padding: 10px 18px 10px 25px;
         gap: 5px;
         box-shadow: 0px 3px 0px 0px #0053A9;
+        font-size: 20px;
+        padding: 15px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .hero__imagSec {
@@ -1502,11 +1578,46 @@ button {
         left: 290px;
     }
 
+
+
+    .swiper-button-prev2,
+    .swiper-button-next2 {
+        margin-top: -30px;
+    }
+
+    .swiper-button-prev2 svg,
+    .swiper-button-next2 svg {
+        width: 13px;
+        height: 9px;
+    }
+
+    .swiper-button-prev2 {
+        width: 32px;
+        height: 32px;
+        left: 250px;
+    }
+
+    .swiper-button-next2 {
+        width: 32px;
+        height: 32px;
+        left: 290px;
+    }
+
+
     .mySwiper {
         overflow: visible !important;
     }
 
     .swiper .mySwiper {
+        overflow: visible;
+    }
+
+    .mySwiper2 {
+        overflow: visible !important;
+        margin-top: 70px;
+    }
+
+    .swiper .mySwiper2 {
         overflow: visible;
     }
 
@@ -1536,7 +1647,7 @@ button {
 
     .services__title {
         font-size: 32px;
-        margin-bottom: 64px;
+        margin-bottom: 19px;
     }
 
     .ms {
@@ -1587,7 +1698,7 @@ button {
 
     .gift {
         padding-top: 25px;
-        padding-bottom: 26px;
+        padding-bottom: 49px;
     }
 
     .gift__title {
@@ -1712,10 +1823,6 @@ button {
         margin-bottom: 15px;
     }
 
-    .stages__col-title {
-        font-size: 18px;
-        margin-bottom: 8px;
-    }
 
     .ml {
         padding-top: 10px;
@@ -1731,75 +1838,7 @@ button {
         padding-top: 10px;
     }
 
-    .stages__col-description {
-        font-size: 12px;
-    }
 
-    .stages__col:nth-child(1) {
-        margin-left: auto;
-        align-items: end;
-        justify-content: center;
-    }
-
-    .stages__col:nth-child(2) {
-        margin-right: auto;
-        align-items: end;
-    }
-
-    .stages__cols:nth-child(1) {
-        margin-left: auto;
-        margin-bottom: 50px;
-        align-items: end;
-    }
-
-    .stages__cols:nth-child(2) {
-        margin-right: auto;
-        margin-bottom: 50px;
-        align-items: end;
-    }
-
-    .stages__cols:nth-child(3) {
-        margin-left: auto;
-        margin-bottom: 50px;
-        align-items: end;
-    }
-
-    .stages__image {
-        margin: 0 auto;
-        position: absolute;
-        z-index: 30;
-        left: 43%;
-        top: -6.5%;
-    }
-
-    .stages__card {
-        max-width: 150px;
-        width: 100%;
-    }
-
-    .stages__item {
-        flex-direction: column;
-    }
-
-    .stages__items {
-        flex-direction: column;
-    }
-
-    .servicer__img2 {
-        max-width: 250px;
-        left: 550px;
-    }
-
-    .servicer__img1 {
-        max-width: 250px;
-        left: -136px;
-        top: 280px;
-    }
-
-    .servicer__img3 {
-        max-width: 250px;
-        left: 550px;
-    }
 
     .only__moblie {
         display: flex;
@@ -1817,8 +1856,15 @@ button {
     .swiper__box {
         max-width: 69px;
         position: absolute;
-        top: 100px;
+        top: 25px;
         width: 100%;
+    }
+
+    .swiper__boxs {
+        max-width: 69px;
+        position: absolute;
+        width: 100%;
+        top: 136px;
     }
 
     .our {
@@ -1826,28 +1872,25 @@ button {
         padding-bottom: 25px;
     }
 
-    .stages__col {
-        flex-direction: column;
-        max-width: 250px;
-        margin-bottom: 50px;
-    }
-
-    .stages__img {
-        max-width: 163px;
-        width: 100%;
-    }
 
     .stages {
         padding-top: 25px;
         padding-bottom: 17px;
     }
+
+    .gift__btn {
+        width: 100%;
+    }
+
+    .services__box {
+        margin-bottom: 27px;
+    }
 }
 
 
 @media (max-width:480px) {
-
-    .hero__col-description {
-        font-size: 13px;
+    .services__icons {
+        display: block;
     }
 
     .hero__box {
@@ -1864,7 +1907,8 @@ button {
     }
 
     .whyUs__col-title {
-        font-size: 17px;
+        font-size: 20px;
+        font-weight: 700;
     }
 
     .whyUs__col-description {
@@ -1887,7 +1931,6 @@ button {
 
     .whyUs__row {
         gap: 15px;
-        margin-bottom: 40px;
     }
 
     .our__title {
@@ -1932,12 +1975,30 @@ button {
     }
 
     .servicer__img3 {
-        max-width: 250px;
+        max-width: 230px;
         left: 210px;
         top: 550px;
     }
 
+    .stages__btn {
+        font-size: 16px;
+        padding: 15px 20px;
+    }
 
+    .stages__btn img {
+        width: 25px;
+        height: 25px;
+    }
+    .gift__col-description {
+        font-size: 20px;
+    }
+    .gift__btn {
+        padding: 11px;
+    }
+    .hero__imagSec {
+        width: 25px;
+    }
+    
 }
 
 @media (max-width:340px) {
@@ -1963,36 +2024,28 @@ button {
         height: 32px;
         left: 240px;
     }
+
+
+    .swiper-button-prev2 {
+        width: 32px;
+        height: 32px;
+        left: 200px;
+    }
+
+    .swiper-button-next2 {
+        width: 32px;
+        height: 32px;
+        left: 240px;
+    }
+
     .servicer__img3 {
         left: 180px;
     }
 
-    .stages__col-title {
-        font-size: 16px;
-        margin-bottom: 4px;
-    }
-
-    .stages__col-description {
-        font-size: 11px;
-        max-width: 120px;
-    }
 
     .end {
         text-align: end;
         align-items: end;
-    }
-
-    .stages__image {
-        margin-top: 4px;
-        height: 608px;
-    }
-
-    .stages__container {
-        padding: 0 16px;
-    }
-
-    .stages__cols-images {
-        max-width: 125px;
     }
 
     .services__title {
@@ -2002,5 +2055,9 @@ button {
     .request__title {
         font-size: 28px;
         margin-bottom: 10px;
+    }
+
+    .whyUs__col-title {
+        font-size: 18px;
     }
 }
