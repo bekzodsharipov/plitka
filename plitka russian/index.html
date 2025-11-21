@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plitka</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <a class="header__logo" href="#">Logo</a>
+                <ul class="header__nav">
+                    <li><a class="header__nav-link" href="#whyUs">Почему мы?</a></li>
+                    <li><a class="header__nav-link" href="#our">Наши работы</a></li>
+                    <li><a class="header__nav-link" href="#stages">Как мы работаем</a></li>
+                    <li><a class="header__nav-link" href="#clients">Отзывы</a></li>
+                    <li><button style="cursor: pointer; border: none;background-color: transparent;"
+                            class="header__nav-link registerBtn">Оставить заявку</button></li>
+                </ul>
+
+                <div class="header__number">
+                    <a href="tel:+79618751032" class="header__number-mobile">
+                        <div class="header__images">
+                            <img src="./images/icons/Vector (20).svg" alt="tel">
+                        </div>
+                        <p class="header__number-title">+7 961 875-1032</p>
+                    </a>
+                </div>
+                
+
+                <div class="hamburger" id="hamburger">
+                    <img src="./images/icons/menu.svg" alt="">
+                </div>
+            </div>
+
+            <div class="mobile-overlay" id="overlay"></div>
+
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="close-btn" id="closeBtn">×</div>
+                <ul style="text-decoration: underline;">
+                    <li><a href="#whyUs">Почему мы?</a></li>
+                    <li><a href="#our">Наши работы</a></li>
+                    <li><a href="#stages">Как мы работаем</a></li>
+                    <li><a href="#clients">Отзывы</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+
+        <section class="hero">
+            <div class="hero__container">
+                <h1 class="hero__title">Ремонт ванной комнат <br>
+                    под ключ в Москве <br class="xl-hidden">
+                    и Области</h1>
+                <p class="hero__description">Делаем всё за вас: от демонтажа <br> до финальной уборки. Гарантия 5 лет.
+                </p>
+                <div class="hero__row">
+                    <button id="openCalcBtn" class="hero__cols only__destop">
+                        <img class="hero__imagSec" src="/images/icons/arrow-left.svg" loading="lazy"
+                            alt="telegram icon">
+                        <p class="hero__col-description">Получить расчёт стоимости</p>
+                    </button>
+                    <button class="hero__cols only__mobile__btn registerBtn" style="width: 100%; margin: 0;">
+                        <img class="hero__imagSec" src="/images/icons/tel.svg" loading="lazy" alt="telegram icon">
+                        <p class="hero__col-description">Оставить заявку</p>
+                    </button>
+                    <div class="hero__box">
+                        <a href="https://t.me/shoxrux_1032" class="hero__col">
+                            <img class="hero__imagSec" src="/images/icons/telegram.svg" loading="lazy"
+                                alt="telegram icon">
+                            <p class="hero__col-description">Telegram</p>
+                        </a>
+                        <a href="https://wa.me/79618751032" class="hero__col">
+                            <img src="/images/icons/whatsApp.svg" alt="" class="hero__imagSec">
+                            <p class="hero__col-description">WhatsApp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <section class="whyUs" id="whyUs">
+        <div class="whyUs__container">
+
+            <h2 class="whyUs__title">Почему именно мы?</h2>
+
+            <div class="whyUs__box">
+                <img class="whyUs__img" src="./images/whyUs/img.avif" loading="lazy" alt="img">
+
+                <div class="whyUs__row">
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/1.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">7 лет опыта</h3>
+                        <p class="whyUs__col-description">Наши мастера все <br> профессионалы с большим опытом</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/2.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Фиксированная ценa</h3>
+                        <p class="whyUs__col-description">без скрытых платежей. <br> Всё в договоре</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/3.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Срок от 10 дней</h3>
+                        <p class="whyUs__col-description">сдаём объект точно в срок</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/4.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Штраф за задержку</h3>
+                        <p class="whyUs__col-description" style="font-family: sans-serif;">0,5% в день</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/5.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Гарантия 5 лет</h3>
+                        <p class="whyUs__col-description">на работы и материалы</p>
+                    </div>
+                    <div class="whyUs__col">
+                        <div class="whyUs__item">
+                            <img src="./images/whyUs/6.avif" width="60" height="60" loading="lazy" alt="icons">
+                        </div>
+                        <h3 class="whyUs__col-title">Поэтапная оплата</h3>
+                        <p class="whyUs__col-description">платите после приёмки этапов</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="our" id="our">
+        <div class="our__container">
+            <h2 class="our__title">Наши работы</h2>
+
+            <div class="our__swiper_container">
+                <div class="swiper__box">
+                    <div class="swiper-button-nexts">
+                        <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_80_172)">
+                                <path d="M3.16602 2.16021L12.6233 12.1428L3.16602 22.1255" stroke="white"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_80_172">
+                                    <rect width="25" height="15" fill="white"
+                                        transform="translate(1.09279e-06 25) rotate(-90)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prevs">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.957 21.4653L1.49979 11.4826L10.957 1.5" stroke="white" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="swiper mySwiper">
+                    <div class="our__box swiper-wrapper">
+                        <div class="our__item swiper-slide">
+                            <h3 class="our__item-title">Процесс работы:</h3>
+                            <img src="./images/ourWork/1.avif" alt="images">
+                        </div>
+                        <div class="our__item swiper-slide">
+                            <h3 class="our__item-title">Результат работы:</h3>
+                            <img src="./images/ourWork/2.avif" alt="images">
+                        </div>
+
+                        <div class="our__item swiper-slide">
+                            <h3 class="our__item-title">Процесс работы:</h3>
+                            <img src="./images/ourWork/3.avif" alt="images">
+                        </div>
+                        <div class="our__item swiper-slide">
+                            <h3 class="our__item-title">Результат работы:</h3>
+                            <img src="./images/ourWork/4.avif" alt="images">
+                        </div>
+                        <div class="our__item swiper-slide">
+                            <h3 class="our__item-title">Процесс работы:</h3>
+                            <img src="./images/ourWork/5.avif" alt="images">
+                        </div>
+                        <div class="our__item swiper-slide">
+                            <h3 class="our__item-title">Результат работы:</h3>
+                            <img src="./images/ourWork/6.avif" alt="images">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <p class="our__description">Г. Сергиев Посад, <br>
+                ул. Краснии Армии 203В «Сбербанк»</p>
+
+            <button class="our__btn registerBtn">
+                <img src="./images/icons/tel.svg" alt="">
+                Оставить заявку
+            </button>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services__container">
+            <h2 class="services__title">Наши услуги</h2>
+
+            <div class="services__row">
+                <div class="services__row__col">
+                    <h3 class="services__row__col__title">Эконом</h3>
+                    <p class="services__row__col__price">от 150 000 ₽</p>
+                    <h4 class="services__row__col__list_title">Что входит:</h4>
+                    <ul class="services__row__col__list">
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+
+                            Демонтаж
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+
+                            плитка
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+
+                            сантехника
+                        </li>
+                    </ul>
+                    <button class="services__row__col__btn" data-tariff="Эконом">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="services__row__col">
+                    <h3 class="services__row__col__title">Стандарт</h3>
+                    <p class="services__row__col__price">от 250 000 ₽</p>
+                    <h4 class="services__row__col__list_title">Что входит:</h4>
+                    <ul class="services__row__col__list">
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            Демонтаж
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            плитка
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            сантехника
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            гидроизоляция
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            натяжной потолок
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            подсветка
+                        </li>
+                    </ul>
+                    <button class="services__row__col__btn" data-tariff="Стандарт">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="services__row__col">
+                    <h3 class="services__row__col__title">Премиум</h3>
+                    <p class="services__row__col__price">от 400 000 ₽</p>
+                    <h4 class="services__row__col__list_title">Что входит:</h4>
+                    <ul class="services__row__col__list">
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            Демонтаж
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            плитка
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            сантехника
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            гидроизоляция
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            натяжной потолок
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            подсветка
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            Дизайн проект
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            тёплая стена
+                        </li>
+                        <li class="services__row__col__list__item">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.25 0C2.79821 0 0 2.79821 0 6.25V18.75C0 22.2018 2.79821 25 6.25 25H18.75C22.2018 25 25 22.2018 25 18.75V6.25C25 2.79821 22.2018 0 18.75 0H6.25ZM18.755 9.31879C19.217 8.7412 19.1234 7.89841 18.5457 7.43634C17.9682 6.97427 17.1254 7.06791 16.6633 7.6455L10.3314 15.5604L7.79841 13.6607C7.20668 13.2169 6.36721 13.3368 5.92341 13.9286C5.47963 14.5203 5.59954 15.3598 6.19127 15.8036L9.7627 18.4821C10.3414 18.9163 11.1602 18.8121 11.6121 18.2473L18.755 9.31879Z"
+                                    fill="#FFDB60" />
+                            </svg>
+                            смарт‑сантехника
+                        </li>
+                    </ul>
+                    <button class="services__row__col__btn" data-tariff="Премиум">
+                        Оставить заявку
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stages" id="stages">
+        <div class="stages__container">
+            <h2 class="stages__titles">Этапы работы</h2>
+
+            <picture>
+                <source srcset="./images/work_step_mobile.png" media="(max-width: 768px)" />
+
+                <img src="./images/work_step.png" alt="Этапы работы" class="stages__steps" width="1630" height="451" />
+            </picture>
+
+        </div>
+
+    </section>
+
+
+    <section class="clients" id="clients">
+        <div class="clients__container">
+            <a class="our__btn registerBtn only__mobile"
+                style="margin-bottom: 80px; margin-left: auto; margin-right: auto;" href="tel:79618751032">
+                <img src="./images/icons/tel.svg" alt="" style="margin-left: 0;">
+                Звоните: +7 (961) 875-10-32
+            </a>
+            <h2 class="clients__titles">Отзывы наших клиентов</h2>
+
+            <div class="our__swiper_container">
+                <div class="swiper__box">
+                    <div class="swiper-button-nexts">
+                        <svg width="15" height="25" viewBox="0 0 15 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_80_172)">
+                                <path d="M3.16602 2.16021L12.6233 12.1428L3.16602 22.1255" stroke="white"
+                                    stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_80_172">
+                                    <rect width="25" height="15" fill="white"
+                                        transform="translate(1.09279e-06 25) rotate(-90)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="swiper-button-prevs">
+                        <svg width="13" height="23" viewBox="0 0 13 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.957 21.4653L1.49979 11.4826L10.957 1.5" stroke="white" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="swiper mySwiper" style="padding-bottom: 10px !important;">
+                    <div class="swiper-wrapper">
+                        <div class="clients__box swiper-slide">
+                            <img class="clients__images" src="./images/cliens/stars.svg" alt="">
+                            <p class="clients__text">
+                                Работа выполнена качественно и в срок. Все пожелания учтены. Очень довольна и
+                                рекомендую.
+                            </p>
+                            <hr>
+                            <div class="clients__card">
+                                <img src="./images/cliens/clien-one.avif" width="76" height="76" alt="">
+                                <h3 class="clients__title">Амангуль</h3>
+                            </div>
+                        </div>
+                        <div class="clients__box swiper-slide">
+                            <img class="clients__images" src="./images/cliens/stars.svg" alt="">
+                            <p class="clients__text">
+                                Профессионально, быстро и качественно. Все сложности решили оперативно. Рекомендую.
+                            </p>
+                            <hr>
+                            <div class="clients__card">
+                                <img src="./images/cliens/clien-two.avif" width="76" height="76" alt="">
+                                <h3 class="clients__title">Антон</h3>
+                            </div>
+                        </div>
+                        <div class="clients__box swiper-slide">
+                            <img class="clients__images" src="./images/cliens/stars.svg" alt="">
+                            <p class="clients__text">
+                                Работа выполнена качественно и в срок. Все пожелания учтены. Очень довольна и
+                                рекомендую.
+                            </p>
+                            <hr>
+                            <div class="clients__card">
+                                <img src="./images/cliens/clien-one.avif" width="76" height="76" alt="">
+                                <h3 class="clients__title">Амангуль</h3>
+                            </div>
+                        </div>
+                        <div class="clients__box swiper-slide">
+                            <img class="clients__images" src="./images/cliens/stars.svg" alt="">
+                            <p class="clients__text">
+                                Профессионально, быстро и качественно. Все сложности решили оперативно. Рекомендую.
+                            </p>
+                            <hr>
+                            <div class="clients__card">
+                                <img src="./images/cliens/clien-two.avif" width="76" height="76" alt="">
+                                <h3 class="clients__title">Антон</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gift">
+        <div class="gift__container">
+            <h2 class="gift__titles ms">Подарок 🎁</h2>
+
+            <div class="gift__info">
+                <img class="gift__images" src="./images/gift.avif" alt="gift img">
+                <div class="gift__box">
+                    <h3 class="gift__title">В этом месяце при заказе
+                        монтаж <span>натяжные потолки в подарок!</span></h3>
+                    <p class="gift__text">При заказе ремонт под ключ в ванной и  санузле - услуга монтаж натяжные
+                        потолки
+                        входит бесплатно</p>
+                    <div class="gift__btn-box">
+                        <button class="services__btn btn registerBtn wow">
+                            <img src="./images/icons/tel.svg" alt="tel" width="39" height="39">
+                            Оставить заявку</button>
+                        <button class="services__btn only__destop">
+                            <img src="./images/icons/telegram.svg" alt="telegram" width="39" height="39">
+                            Написать в телеграм</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__box">
+                <a class="header__logo" href="#">Logo</a>
+                <p class="footer__text only__mobile">Сделаем качественно, ровно и по дизайну 100% гарантия Сроки — точно
+                    в договоре
+                </p>
+                <div class="footer__images-box">
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/telegram.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/instagram.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/youtube.png" alt="">
+                    </a>
+                    <a href="#">
+                        <img class="footer__img" src="./images/footer/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="footer__row only__moblie">
+                <div class="footer__col">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10.7259 5.27161C11.7258 5.43919 12.6341 5.91146 13.3592 6.6351C14.0843 7.35873 14.5538 8.26518 14.7255 9.26304M10.8786 2C12.657 2.30088 14.279 3.14259 15.5689 4.42609C16.8589 5.7134 17.6985 7.33206 18 9.10688M16.6108 16.1681C16.6108 16.1681 15.6452 17.1164 15.4086 17.3944C15.0232 17.8058 14.569 18 13.9737 18C13.9164 18 13.8553 18 13.7981 17.9962C12.6646 17.9238 11.6113 17.482 10.8213 17.105C8.6612 16.0614 6.76445 14.5799 5.18827 12.7022C3.88687 11.1369 3.01673 9.6896 2.44045 8.13568C2.08552 7.18733 1.95576 6.44846 2.01301 5.75148C2.05117 5.30588 2.22291 4.93644 2.53967 4.62033L3.84107 3.32159C4.02808 3.14639 4.22653 3.05118 4.42117 3.05118C4.6616 3.05118 4.85624 3.1959 4.97836 3.31778C4.98218 3.32159 4.986 3.3254 4.98981 3.32921C5.22261 3.5463 5.44397 3.771 5.67677 4.01095C5.79508 4.13282 5.9172 4.2547 6.03933 4.38038L7.08121 5.42014C7.48575 5.82385 7.48575 6.19709 7.08121 6.60081C6.97053 6.71126 6.86367 6.82171 6.753 6.92835C6.43242 7.25589 6.68425 7.00457 6.35222 7.30164C6.34459 7.30926 6.33696 7.31307 6.33314 7.32068C6.00493 7.64823 6.06599 7.96815 6.13469 8.18524C6.1385 8.19667 6.14232 8.20809 6.14614 8.21952C6.4171 8.8746 6.79874 9.49159 7.37884 10.2267L7.38265 10.2305C8.43598 11.5254 9.54656 12.5347 10.7716 13.3078C10.9281 13.4069 11.0884 13.4868 11.241 13.563C11.3784 13.6316 11.5082 13.6963 11.6189 13.7649C11.6341 13.7725 11.6494 13.7839 11.6647 13.7915C11.7944 13.8563 11.9166 13.8867 12.0425 13.8867C12.3593 13.8867 12.5577 13.6887 12.6226 13.6239L13.3707 12.8774C13.5004 12.7479 13.7065 12.5918 13.9469 12.5918C14.1836 12.5918 14.3782 12.7403 14.4965 12.8698C14.5003 12.8736 14.5003 12.8736 14.5041 12.8774L16.607 14.976C17.0001 15.3644 16.6108 16.1681 16.6108 16.1681Z"
+                            stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="footer__col-text">+7 961-875-1032</p>
+                </div>
+                <div class="footer__col">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="10" cy="9.1665" rx="2.5" ry="2.5" stroke="white" stroke-width="1.25"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M14.7143 13.8806L11.1785 17.4164C10.5278 18.0665 9.4734 18.0665 8.82266 17.4164L5.286 13.8806C2.6826 11.2771 2.68267 7.05602 5.28616 4.45258C7.88964 1.84914 12.1107 1.84914 14.7142 4.45258C17.3177 7.05602 17.3177 11.2771 14.7143 13.8806V13.8806Z"
+                            stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <p class="footer__col-text">г. Ташкент, Чиланзарский район</p>
+                </div>
+
+            </div>
+
+            <ul class="footer__nav">
+                <li><a class="header__nav-link" href="#">Почему мы?</a></li>
+                <li><a class="header__nav-link" href="#">Наши работы</a></li>
+                <li><a class="header__nav-link" href="#">Как мы работаем</a></li>
+                <li><a class="header__nav-link" href="#">Отзывы</a></li>
+                <li><a class="header__nav-link" href="#">Оставить заявку</a></li>
+            </ul>
+
+            <div class="footer__info">
+                <p class="footer__text only__destop">Сделаем качественно, ровно и по дизайну 100% гарантия Сроки — точно
+                    в договоре
+                </p>
+
+                <div class="footer__row only__destop">
+                    <div class="footer__col">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <ellipse cx="10" cy="9.1665" rx="2.5" ry="2.5" stroke="white" stroke-width="1.25"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.7143 13.8806L11.1785 17.4164C10.5278 18.0665 9.4734 18.0665 8.82266 17.4164L5.286 13.8806C2.6826 11.2771 2.68267 7.05602 5.28616 4.45258C7.88964 1.84914 12.1107 1.84914 14.7142 4.45258C17.3177 7.05602 17.3177 11.2771 14.7143 13.8806V13.8806Z"
+                                stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="footer__col-text">г. Ташкент, Чиланзарский район, квартал «Ц», дом 7/1</p>
+                    </div>
+                    <div class="footer__col">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.7259 5.27161C11.7258 5.43919 12.6341 5.91146 13.3592 6.6351C14.0843 7.35873 14.5538 8.26518 14.7255 9.26304M10.8786 2C12.657 2.30088 14.279 3.14259 15.5689 4.42609C16.8589 5.7134 17.6985 7.33206 18 9.10688M16.6108 16.1681C16.6108 16.1681 15.6452 17.1164 15.4086 17.3944C15.0232 17.8058 14.569 18 13.9737 18C13.9164 18 13.8553 18 13.7981 17.9962C12.6646 17.9238 11.6113 17.482 10.8213 17.105C8.6612 16.0614 6.76445 14.5799 5.18827 12.7022C3.88687 11.1369 3.01673 9.6896 2.44045 8.13568C2.08552 7.18733 1.95576 6.44846 2.01301 5.75148C2.05117 5.30588 2.22291 4.93644 2.53967 4.62033L3.84107 3.32159C4.02808 3.14639 4.22653 3.05118 4.42117 3.05118C4.6616 3.05118 4.85624 3.1959 4.97836 3.31778C4.98218 3.32159 4.986 3.3254 4.98981 3.32921C5.22261 3.5463 5.44397 3.771 5.67677 4.01095C5.79508 4.13282 5.9172 4.2547 6.03933 4.38038L7.08121 5.42014C7.48575 5.82385 7.48575 6.19709 7.08121 6.60081C6.97053 6.71126 6.86367 6.82171 6.753 6.92835C6.43242 7.25589 6.68425 7.00457 6.35222 7.30164C6.34459 7.30926 6.33696 7.31307 6.33314 7.32068C6.00493 7.64823 6.06599 7.96815 6.13469 8.18524C6.1385 8.19667 6.14232 8.20809 6.14614 8.21952C6.4171 8.8746 6.79874 9.49159 7.37884 10.2267L7.38265 10.2305C8.43598 11.5254 9.54656 12.5347 10.7716 13.3078C10.9281 13.4069 11.0884 13.4868 11.241 13.563C11.3784 13.6316 11.5082 13.6963 11.6189 13.7649C11.6341 13.7725 11.6494 13.7839 11.6647 13.7915C11.7944 13.8563 11.9166 13.8867 12.0425 13.8867C12.3593 13.8867 12.5577 13.6887 12.6226 13.6239L13.3707 12.8774C13.5004 12.7479 13.7065 12.5918 13.9469 12.5918C14.1836 12.5918 14.3782 12.7403 14.4965 12.8698C14.5003 12.8736 14.5003 12.8736 14.5041 12.8774L16.607 14.976C17.0001 15.3644 16.6108 16.1681 16.6108 16.1681Z"
+                                stroke="white" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="footer__col-text">+998 90-338-70-00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__hr"></div>
+
+            <p class="footer__description">© 2025. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="registrationModal" class="homeModal" style="display: none">
+        <div class="homeModalOverlay"></div>
+        <div class="homeFormContainer">
+            <button class="closeButton" id="closeModalBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 12 12" fill="none">
+                    <path d="M1 11L11 1M1 1.00001L11 11" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" />
+                </svg>
+            </button>
+
+            <div style="max-width: 1147px; width: 100%;margin-left: auto;margin-right: auto;">
+                <div class="homeFormTop">
+                    <h1 class="homeFormTopTitle">
+                        ОСТАВИТЬ ЗАЯВКУ
+                    </h1>
+                    <p class="homeFormTopText">
+                        Оставьте свои контакты — мы свяжемся <br> с вами в ближайшее время
+                    </p>
+                </div>
+
+                <form id="registrationForm" name="contact-form">
+                    <!-- Имя -->
+                    <div class="HomeFormRow">
+                        <label class="HomeFormRowLabel" for="name">Ваше имя:</label>
+                        <input class="HomeFormRowInput" type="text" id="name" name="name" placeholder="Алексей"
+                            autocomplete="name" required />
+                    </div>
+
+                    <!-- Телефон -->
+                    <div class="HomeFormRow">
+                        <label class="HomeFormRowLabel" for="phone">Номер телефона:</label>
+                        <div class="phone-input-container">
+                            <div class="country-selector">
+                                <div class="selected-country" id="selectedCountry">
+                                    <span id="selectedCountryCode">+7</span>
+                                </div>
+                                <div class="country-dropdown" id="countryDropdown" style="display: none"></div>
+                            </div>
+                            <input class="HomeFormRowInput" type="tel" id="phone" name="phone"
+                                placeholder="00 000-00-00" autocomplete="tel" required />
+                        </div>
+                        <p class="homeFormErrorText" id="phoneError" style="display: none">
+                            ❌ Номер телефона указан неверно!
+                        </p>
+                    </div>
+
+                    <!-- Адрес -->
+                    <div class="HomeFormRow">
+                        <label class="HomeFormRowLabel" for="address">Адрес:</label>
+                        <input class="HomeFormRowInput" type="text" id="address" name="address"
+                            placeholder="Город Москва, Братеево район" autocomplete="street-address" />
+                    </div>
+
+                    <!-- Тариф (faqat tarif tugmasidan kelganda ko‘rinadi) -->
+                    <div class="HomeFormRow" id="tariffRow" style="display: none">
+                        <label class="HomeFormRowLabel" for="tariff">Услуги:</label>
+                        <input class="HomeFormRowInput" type="text" id="tariff" name="tariff" placeholder="Не выбран"
+                            readonly />
+                    </div>
+
+                    <!-- Услуга (faqat oddiy register btn bilan) -->
+                    <div class="HomeFormRow" id="serviceRow">
+                        <label class="HomeFormRowLabel" for="service">Выберите услугу:</label>
+                        <div class="select-wrapper">
+                            <select id="service" name="service" class="HomeFormRowInput" required>
+                                <option value="" disabled selected>Выберите...</option>
+                                <option value="Эконом">Эконом</option>
+                                <option value="Стандарт">Стандарт</option>
+                                <option value="Премиум">Премиум</option>
+                            </select>
+                        </div>
+                    </div>
+
+
+                    <!-- Кнопка -->
+                    <button type="submit" class="HomeFormBtn" id="submitBtn">
+                        Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== MODAL ===== -->
+    <div class="calc-modal" id="calcModal">
+        <div class="calc-modal__overlay" id="calcOverlay"></div>
+
+        <div class="calc-modal__content">
+            <button class="calc-modal__close" id="calcCloseBtn" aria-label="Закрыть">
+                ✕
+            </button>
+
+            <h2 class="calc-modal__title">Получить расчёт стоимости</h2>
+
+            <form class="calc-form" id="calcForm" autocomplete="off">
+                <!-- 1) Услуга -->
+                <div class="calc-form__group">
+                    <label class="calc-form__label" for="serviceSelect">
+                        Выберите услугу:
+                    </label>
+
+                    <div class="calc-select">
+                        <select id="serviceSelect" class="calc-select__field">
+                            <option value="">Выберите…</option>
+                            <option value="150000">Укладка плитки</option>
+                            <option value="250000">Душевая зона</option>
+                            <option value="400000">Гидроизоляция</option>
+                        </select>
+                        <span class="calc-select__icon">▾</span>
+                    </div>
+                </div>
+
+                <!-- 2) Площадь -->
+                <div class="calc-form__group">
+                    <label class="calc-form__label" for="areaInput">
+                        Сколько м² под ремонт:
+                    </label>
+
+                    <div class="calc-input">
+                        <input type="number" id="areaInput" class="calc-input__field" placeholder="…м²" min="1"
+                            step="1" />
+                        <span class="calc-input__unit">м²</span>
+                    </div>
+                </div>
+
+                <!-- 3) Знак равно -->
+                <div class="calc-form__equals">
+                    <span>=</span>
+                </div>
+
+                <!-- 4) Результат -->
+                <div class="calc-form__group calc-form__group--result">
+                    <label class="calc-form__label">
+                        Стоимость
+                    </label>
+
+                    <button type="button" class="calc-result-btn" id="priceBtn" disabled>
+                        <span id="priceValue">… ₽</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./js/app.js"></script>
+    <script defer src="./js/swiper.js"></script>
+</body>
+
+</html>

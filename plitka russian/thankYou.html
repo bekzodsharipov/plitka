@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка принята</title>
+    <style>
+        @font-face {
+            font-family: "Nekst";
+            src: url("./font/nekst-bold-AaZz-nums-punct.woff2");
+            font-weight: 700;
+            font-display: swap;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .title {
+            font-family: Nekst, sans-serif;
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 130%;
+            text-align: center;
+            text-transform: uppercase;
+            margin-bottom: 59px;
+            margin-top: 40px;
+        }
+
+        .link {
+            max-width: 321px;
+            width: 100%;
+            padding: 29px 20px;
+            background-color: #0A83FF;
+            border-radius: 50px;
+            border: none;
+            font-family: Montserrat, sans-serif;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 100%;
+            color: #fff;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .images {
+            max-width: 130px;
+            width: 100%;
+        }
+
+        @media (max-width:550px) {
+            .title {
+                font-size: 33px;
+                margin-bottom: 30px;
+            }
+
+            .link {
+                padding: 23px 12px;
+                font-size: 21px;
+            }
+            .images {
+                max-width: 120px;
+            }
+        }
+
+        @media (max-width:360px) {
+            .title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <svg class="images" width="130" height="58" viewBox="0 0 130 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M77.7978 10.6662L30.832 56.2192C28.3849 58.5936 24.4626 58.5936 22.0155 56.2192L1.88732 36.6987C-1.56872 33.3475 -0.0551667 27.5582 4.61171 26.2781C6.77762 25.684 9.09992 26.2761 10.7039 27.8314L26.429 43.0814L68.9864 1.80408C72.4404 -1.54718 78.2728 0.0508465 79.4846 4.68052C80.0471 6.82916 79.4008 9.11094 77.7978 10.6662ZM128.197 1.8662C125.76 -0.591406 121.766 -0.626204 119.286 1.78857L76.7442 43.0814L72.6137 39.0747C69.1597 35.7235 63.3274 37.3215 62.1155 41.9512C61.5531 44.0998 62.1942 46.3815 63.7971 47.9369L72.3359 56.2192C74.7831 58.5936 78.7053 58.5936 81.1524 56.2192L128.118 10.6662C130.596 8.2619 130.631 4.32892 128.197 1.8817V1.8662Z"
+                fill="#FFDB60" />
+        </svg>
+        <h1 class="title">Заявка принята</h1>
+        <a class="link" href="./index.html">На главную</a>
+    </div>
+</body>
+
+</html>
